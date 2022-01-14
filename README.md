@@ -36,7 +36,7 @@ t - Change Filesystem<br>
 1<br>
 1<br>
 
-t - Change Filysystem<br>
+t - Change Filesystem<br>
 2<br>
 19<br>
 
