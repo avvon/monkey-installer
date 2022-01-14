@@ -1,6 +1,6 @@
 <h1> monkey-installer</h1>
 
-<h2>Tutorial<h2>
+<h2>Tutorial</h2>
 (Assuming Your on a Fresh Archiso)
 pacman -Sy - Syncs Package Repos
 pacman -S git - Installs Git
