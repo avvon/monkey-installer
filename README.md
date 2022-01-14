@@ -1,79 +1,78 @@
 <h1> monkey-installer</h1>
 
 <h2>Tutorial</h2>
-(Assuming Your on a Fresh Archiso)
-pacman -Sy - Syncs Package Repos
-pacman -S git - Installs Git
-git clone https://github.com/avvon/monkey-installer - Clones The Repo
+(Assuming Your on a Fresh Archiso)<br>
+pacman -Sy - Syncs Package Repos<br>
+pacman -S git - Installs Git<br>
+git clone https://github.com/avvon/monkey-installer - Clones The Repo<br>
 
-sh install.sh - Starts The Installer In Bash
+sh install.sh - Starts The Installer In Bash<br>
+sh install-2.sh - Start Second Part In Bash<br>
 
-sh install-2.sh - Start Second Part In Bash
-
-exit -Exits Arch Install
-umount -l /mnt - Unmount Drives
-reboot
+exit -Exits Arch Install<br>
+umount -l /mnt - Unmount Drives<br>
+reboot<br>
 
 <h2>Partitioning</h2>
 <h3>Home And Root On Same Partition</h3>
-g - GPT
+g - GPT<br>
 
-n - New Partition
-enter
-enter
-+550M
+n - New Partition<br>
+enter<br>
+enter<br>
++550M<br>
 
-n - New Partition
-enter
-enter
-+2G
+n - New Partition<br>
+enter<br>
+enter<br>
++2G<br>
 
-n - New Partition
-enter
-enter
-enter
+n - New Partition<br>
+enter<br>
+enter<br>
+enter<br>
 
-t - Change Filesystem
-1
-1
+t - Change Filesystem<br>
+1<br>
+1<br>
 
-t - Change Filysystem
-2
-19
+t - Change Filysystem<br>
+2<br>
+19<br>
 
-w - Write Changes
+w - Write Changes<br>
 
 <h3>Home And Root On Different Partitions</h3>
-g - GPT
+g - GPT<br>
 
-n - New Partition
-enter
-enter
-+550M
+n - New Partition<br>
+enter<br>
+enter<br>
++550M<br>
 
-n - New Partition
-enter
-enter
-+2G
+n - New Partition<br>
+enter<br>
+enter<br>
++2G<br>
 
-n - New Partition
-enter
-enter
-+30G - Size Depends On Use Case
+n - New Partition<br>
+enter<br>
+enter<br>
++30G - Size Depends On Use Case<br>
 
-n - New Partition
-enter
-enter
-enter
+n - New Partition<br>
+enter<br>
+enter<br>
+enter<br>
 
-t - Change Filesystem
-1
-1
+t - Change Filesystem<br>
+1<br>
+1<br>
 
-t - Change Filysystem
-2
-19
+t - Change Filysystem<br>
+2<br>
+19<br>
 
-w - Write Changes
+w - Write Changes<br>
 
 
