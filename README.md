@@ -1,7 +1,7 @@
 <h1> monkey-installer</h1>
 
 <h2>Tutorial</h2>
-(Assuming Your on a Fresh Archiso)<br>
+(Assuming Your on a Brand New Archiso)<br>
 pacman -Sy - Syncs Package Repos<br>
 pacman -S git - Installs Git<br>
 git clone https://github.com/avvon/monkey-installer - Clones The Repo<br>
