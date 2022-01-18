@@ -2,8 +2,7 @@
 
 <h2>Tutorial</h2>
 (Assuming Your on a Brand New Archiso)<br>
-pacman -Sy - Syncs Package Repos<br>
-pacman -S git - Installs Git<br>
+pacman -Sy git - Syncs Package Repos & Installs Git<br>
 git clone https://github.com/avvon/monkey-installer - Clones The Repo<br>
 
 sh install.sh - Starts The Installer In Bash<br>
