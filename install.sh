@@ -14,10 +14,16 @@ read EFI
 mkfs.fat -F32 $EFI
 
 #swap partition
-echo "What is the Swap Partition"
-read swap
-mkswap $swap
-swapon $swap
+echo "Swap? [y/n]"
+read swapyesno
+if [[ $swapyesno == y* ]]; then
+	echo "What Partition is Swap?"
+	read swap 
+	mkswap $swap
+	swapon $swap
+else
+	echo "Skipping"
+fi
 
 #root partition
 echo "What is the Root Partition"
