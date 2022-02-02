@@ -8,7 +8,7 @@ read multiple
 if [[ $multiple == y* ]]; then
 	lsblk
 	echo "What's Your First Drive?"
-	read $firstdrive
+	read firstdrive
 	fdisk $firstdrive
 else
 	echo "Skipping"
