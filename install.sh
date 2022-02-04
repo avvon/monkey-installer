@@ -3,17 +3,6 @@ timedatectl set-ntp true
 
 #partitioning
 
-echo "Do You Need to Partition Two Drives?"
-read multiple
-if [[ $multiple == y* ]]; then
-	lsblk
-	echo "What's Your First Drive?"
-	read firstdrive
-	fdisk $firstdrive
-else
-	echo "Skipping"
-fi
-
 lsblk
 echo "What Disk Are You Going to Use? // Your Second Drive // e.x /dev/vda"
 read disk
