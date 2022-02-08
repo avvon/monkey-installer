@@ -47,11 +47,13 @@ fi
 
 #pacstrap, mount
 mount $root /mnt
-mount $EFI /mnt/boot/EFI
 pacstrap /mnt base base-devel linux linux-firmware
 
 #fstab
 genfstab -U /mnt >> /mnt/etc/fstab
+
+#efi because can't have it in fstab
+mount $EFI /mnt/boot/EFI
 
 #start second part
 mv install-2.sh /mnt
