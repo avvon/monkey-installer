@@ -39,6 +39,8 @@ if [[ $homeyesno == y* ]]; then
 	echo "What Partition is Home?"
 	read home
 	mkfs.ext4 $home
+	mkdir /mnt/home
+	mount $home /mnt/home
 else
 	echo "Skipping"
 fi
