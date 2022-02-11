@@ -13,7 +13,6 @@ lsblk
 echo "What Partition is EFI?"
 read EFI
 mkfs.fat -F32 $EFI
-mkdir -pv /mnt/boot/EFI
 
 #swap partition
 echo "Swap? [y/n]"
@@ -51,9 +50,6 @@ pacstrap /mnt base base-devel linux linux-firmware
 
 #fstab
 genfstab -U /mnt >> /mnt/etc/fstab
-
-#efi because can't have it in fstab
-mount $EFI /mnt/boot/EFI
 
 #start second part
 mv install-2.sh /mnt

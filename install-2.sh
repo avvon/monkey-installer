@@ -33,6 +33,11 @@ sudo pacman -S vim grub os-prober dosfstools mtools efibootmgr
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 #grub
+echo "What is The EFI partition?"
+read EFI
+mkdir /boot/EFI
+mount $EFI /boot/EFI
+
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
 
